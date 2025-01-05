@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hobilerim</title>
+    <style>
+        /* Genel sayfa stili */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #dcdcdc;
+            color: #333;
+        }
+
+        /* Header ve navigasyon stili */
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            border-bottom: 5px solid #34495e;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            background-color: #34495e;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            padding: 10px 15px;
+            display: inline-block;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            background-color: #4CAF50;
+        }
+
+        /* Ana başlık stili */
+        h1 {
+            color: #f1c40f;
+            font-size: 2.5em;
+        }
+
+        /* Hobiler bölümü */
+        .hobbies-container {
+            max-width: 1000px;
+            margin: 30px auto;
+            padding: 20px;
+            background-color: ghostwhite;
+            border-radius: 15px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            display: grid;
+            grid-template-columns: repeat(2, 1fr); /* 2 sütunlu grid */
+            gap: 20px;
+        }
+
+        .hobby-item {
+            text-align: center;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .hobby-item img {
+            width: 100%;
+            height: 350px; /* Yükseklik arttırıldı */
+            object-fit: cover;
+            border-bottom: 2px solid #ddd;
+            border-radius: 10px; /* Resmin köşeleri yuvarlatıldı */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Gölgeleme eklendi */
+            transition: transform 0.3s ease, box-shadow 0.3s ease; /* Hover efekti için geçiş */
+        }
+
+        .hobby-item img:hover {
+            transform: scale(1.05); /* Hoverda resmi biraz büyütme */
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Hoverda gölgeyi artırma */
+        }
+
+        .hobby-item h3 {
+            font-size: 1.5em;
+            color: #2980b9;
+            margin: 10px 0;
+        }
+
+        .hobby-item p {
+            font-size: 1.2em; /* Yazı boyutunu büyüttük */
+            line-height: 1.8;
+            padding: 0 15px 15px;
+            color: #555; /* Tüm metin için tek renk */
+        }
+
+        /* Footer stili */
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            border-top: 5px solid #34495e;
+        }
+
+        footer a {
+            color: #4CAF50;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* Mobil uyumluluk için */
+        @media (max-width: 768px) {
+            .hobbies-container {
+                grid-template-columns: 1fr; /* Mobilde tek sütun */
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Ana Sayfa</a></li>
+                <li><a href="sayfa1.html">Eğitim Hayatım</a></li>
+                <li><a href="sayfa3.html">Seyahatlerim</a></li>
+                <li><a href="sayfa4.html">Sosyal Projeler</a></li>
+            </ul>
+        </nav>
+        <h1>Hobilerim</h1>
+    </header>
+    <main>
+        <div class="hobbies-container">
+            <div class="hobby-item">
+                <img src="Kitap_yapay.jpg" alt="Kitap Okuma">
+                <h3>Kitap Okuma</h3>
+                <p>Bilim kurgu ve psikoloji alanında kitaplar okumayı çok seviyorum. Kitaplar sayesinde farklı dünyalara yolculuk yapabiliyorum. Okuduğum kitaplar bana yeni bakış açıları kazandırıyor. Özellikle bilim kurgu kitapları, hayal gücümü zorlayan ilginç dünyalar sunuyor. Psikoloji kitapları ise insan davranışlarını daha iyi anlamamı sağlıyor.</p>
+            </div>
+            <div class="hobby-item">
+                <img src="doga__yuruyusu_yapay.jpg" alt="Doğa Yürüyüşleri">
+                <h3>Doğa Yürüyüşleri</h3>
+                <p>Doğada yürüyüş yaparak hem enerji topluyorum hem de zihnimi dinlendiriyorum. Doğanın güzelliklerini keşfetmek beni mutlu ediyor. Her hafta doğada bir yürüyüş yaparak stresimi atıyorum. Ağaçlar, çiçekler ve kuş sesleri arasında olmak ruhumu dinlendiriyor. Ayrıca doğanın içinde yeni yerler keşfetmek çok heyecan verici.</p>
+            </div>
+            <div class="hobby-item">
+                <img src="kodlama.jpg" alt="Kodlama">
+                <h3>Kodlama</h3>
+                <p>Yeni teknolojiler öğrenmek ve projeler geliştirmek benim için hem eğlenceli hem de öğretici bir süreç. Web geliştirme, uygulama kodlama gibi projeler üzerinde çalışarak problem çözme becerilerimi geliştiriyorum. Kodlama dünyası, sürekli değişen bir alanda efektif çözümler üretmeyi sağlıyor.</p>
+            </div>
+            <div class="hobby-item">
+                <img src="yemek_yapay.jpg" alt="Yemek Yapma">
+                <h3>Yemek Yapma</h3>
+                <p>Farklı tarifler deneyerek yeni yemekler yapmayı seviyorum. Yemek yaparken yenilikçiğimi kullanabiliyorum. Özellikle dünya mutfağından yemekler yapmayı çok seviyorum. Yeni tarifler denemek, mutfakta zaman geçirmek bana çok keyif veriyor. Yemek yaparken kullandığım malzemelerle her yemeği daha özgün hale getiriyorum.</p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <nav>
+            <a href="index.html">Ana Sayfaya Dön</a>
+        </nav>
+        <p>&copy; 2025 - Tüm Hakları Saklıdır</p>
+    </footer>
+</body>
+</html>

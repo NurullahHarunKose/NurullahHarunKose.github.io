@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gönüllülük ve Toplumsal Çalışmalarım</title>
+    <style>
+        /* Genel sayfa stili */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+
+        /* Header ve navigasyon stili */
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            border-bottom: 5px solid #34495e;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            background-color: #34495e;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            padding: 10px 15px;
+            display: inline-block;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            background-color: #4CAF50;
+        }
+
+        /* Başlık stili */
+        h1 {
+            color: #f1c40f;
+            font-size: 2.5em;
+        }
+
+        /* Gönüllülük projeleri bölümü */
+        .volunteer-container {
+            max-width: 1200px;
+            margin: 30px auto;
+            padding: 20px;
+            background-color: ghostwhite;
+            border-radius: 15px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
+        }
+
+        .volunteer-item {
+            text-align: center;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .volunteer-item img {
+            width: 100%;
+            height: 600px; /* Resimleri daha dikey yapmak için height değerini 600px olarak ayarladım */
+            object-fit: cover;
+            border-bottom: 2px solid #ddd;
+            border-radius: 10px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        /* Hover efektleri */
+        .volunteer-item:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+        }
+
+        .volunteer-item img:hover {
+            transform: scale(1.1);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .volunteer-item h3 {
+            font-size: 1.6em;
+            color: #2980b9;
+            margin: 15px 0;
+        }
+
+        .volunteer-item p {
+            font-size: 1.2em;
+            line-height: 1.6;
+            padding: 0 15px 20px;
+            color: #555;
+            text-align: left;
+        }
+
+        /* Footer stili */
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            border-top: 5px solid #34495e;
+        }
+
+        footer a {
+            color: #4CAF50;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* Mobil uyumluluk için */
+        @media (max-width: 768px) {
+            .volunteer-container {
+                grid-template-columns: 1fr; /* Mobilde tek sütun */
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Ana Sayfa</a></li>
+                <li><a href="sayfa1.html">Eğitim Hayatım</a></li>
+                <li><a href="sayfa2.html">Hobilerim</a></li>
+                <li><a href="sayfa3.html">Seyahatlerim</a></li>
+            </ul>
+        </nav>
+        <h1>Gönüllülük ve Toplumsal Çalışmalarım</h1>
+    </header>
+    <main>
+        <div class="volunteer-container">
+            <div class="volunteer-item">
+                <img src="temizlik.jpg" alt="Topluluk Projesi">
+                <h3>Topluluk Projesi</h3>
+                <p>Yerel bir çevre temizliği projesine katıldım. Bu projede, çevre bilincini artırmak için gönüllü arkadaşlarımla birlikte parklarda, plajlarda ve şehir içinde temizlik faaliyetleri gerçekleştirdik. Bu çalışmanın ardından, katılımcılara geri dönüşümü anlatan bir seminer düzenledik ve doğa dostu alışkanlıklar geliştirmelerini teşvik ettik.</p>
+            </div>
+            <div class="volunteer-item">
+                <img src="sosyal.jpg" alt="Sosyal Yardım">
+                <h3>Sosyal Yardım</h3>
+                <p>İhtiyaç sahibi ailelere yardım ulaştıran bir organizasyonda gönüllü olarak görev aldım. Her hafta farklı mahallelerde yaşayan ailelere gıda, giyecek ve eğitim materyalleri dağıttık. Bu deneyim, toplumsal dayanışmanın önemini bir kez daha görmemi sağladı.</p>
+            </div>
+            <div class="volunteer-item">
+                <img src="cocuk_kodlama.jpg" alt="Çocuklara Kodlama Eğitimi">
+                <h3>Eğitim Desteği</h3>
+                <p>Çocuklara ücretsiz olarak kodlama dersleri verdim. Bu dersler, çocukların mantıksal düşünme becerilerini geliştirmelerine yardımcı oldu. Onlarla birlikte çeşitli projeler yaparak, teknolojiye olan ilgilerini arttırdık ve onların gelecekteki kariyerlerine katkı sağlamayı amaçladık.</p>
+            </div>
+            <div class="volunteer-item">
+                <img src="hayvan.jpg" alt="Hayvan Barınağı">
+                <h3>Hayvan Barınağı</h3>
+                <p>Barınakta gönüllü olarak çalışarak hayvanların bakımına yardım ettim. Yolda kalan, yaralı veya terkedilmiş hayvanların tedavi edilmesi ve sahiplendirilmesi için çok sayıda gönüllü ile birlikte görev aldık. Bu süreç, hem hayvanlar hem de onların sahiplerini mutlu etti.</p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <nav>
+            <a href="index.html">Ana Sayfaya Dön</a>
+        </nav>
+        <p>&copy; 2025 - Tüm Hakları Saklıdır</p>
+    </footer>
+</body>
+</html>

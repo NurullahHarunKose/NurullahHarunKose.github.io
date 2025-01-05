@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eğitim Hayatım</title>
+    <style>
+        /* Genel sayfa stili */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #dcdcdc; /* Sayfa arka plan rengi */
+            color: #333;
+        }
+
+        /* Header ve navigasyon stili */
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            border-bottom: 5px solid #34495e;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            background-color: #34495e;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            padding: 10px 15px;
+            display: inline-block;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            background-color: #4CAF50;
+        }
+
+        /* Ana başlık stili */
+        h1 {
+            color: #f1c40f;
+            font-size: 2.5em;
+        }
+
+        /* Eğitim başlıkları ve içerik */
+        .education-container {
+            max-width: 900px;
+            margin: 30px auto;
+            padding: 20px;
+            background-color: ghostwhite; /* Sayfa arka planına yakın, ama biraz koyu bir gri */
+            border-radius: 15px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .education-container h2 {
+            color: #2980b9;
+            font-size: 1.8em;
+            margin-bottom: 15px;
+        }
+
+        .education-container p {
+            font-size: 1.2em;
+            line-height: 1.7;
+            margin-bottom: 20px;
+        }
+
+        /* Tablo stili */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+
+        th, td {
+            padding: 15px;
+            text-align: left;
+            font-size: 1.1em;
+        }
+
+        th {
+            background-color: #2980b9;
+            color: white;
+        }
+
+        /* Amblem stili */
+        .university-logo {
+            width: 250px; /* Amblemin boyutu */
+            height: auto;
+            margin-left: 20px;
+            vertical-align: middle;
+            border-radius: 10px;
+            background-color: ghostwhite;
+        }
+
+        /* Flex düzenlemesi */
+        .education-info {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 20px; /* Öğeler arasındaki boşluk */
+        }
+
+        /* Footer stili */
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            border-top: 5px solid #34495e;
+        }
+
+        footer a {
+            color: #4CAF50;
+            text-decoration: none;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Ana Sayfa</a></li>
+                <li><a href="sayfa2.html">Hobilerim</a></li>
+                <li><a href="sayfa3.html">Seyahatlerim</a></li>
+                <li><a href="sayfa4.html">Sosyal Projeler</a></li>
+            </ul>
+        </nav>
+        <h1>Eğitim Hayatım</h1>
+    </header>
+    <main>
+        <div class="education-container">
+            <h2>İlkokul Eğitimi</h2>
+            <p>İlkokul eğitimime [Okul Adı]’nda başladım. Bu dönemde temel eğitim alarak öğrenmeye adım attım ve ilk bilgisini edinme süreçlerim başladı.</p>
+
+            <h2>Ortaokul ve Lise Eğitimi</h2>
+            <p>Ortaokul eğitimimi [Okul Adı]’nda tamamladıktan sonra [Lise Adı]’nda devam ettim. Bu yıllarda bilimsel düşünme ve sosyal sorumluluk alanlarında daha fazla deneyim kazandım.</p>
+
+            <h2>Eğitim Gördüğüm Okul</h2>
+            <div class="education-info">
+                <table>
+                    <tr>
+                        <th>Okul Adı</th>
+                        <td>Bursa Teknik Üniversitesi</td>
+                    </tr>
+                    <tr>
+                        <th>Bölüm</th>
+                        <td>Bilgisayar Mühendisliği</td>
+                    </tr>
+                    <tr>
+                        <th>Yerleşme Yılı</th>
+                        <td>2024</td>
+                    </tr>
+                    <tr>
+                        <th>Eğitim Süresi</th>
+                        <td>4 Yıl</td>
+                    </tr>
+                    <tr>
+                        <th>Önemli Başarılar</th>
+                        <td>Leetcode Sitesi Üzerinde 400'den Fazla Algoritma Sorusu Çözümü</td>
+                    </tr>
+                </table>
+                <img class="university-logo" src="indir.png" alt="Üniversite Amblemi">
+            </div>
+
+            <h2>İleriye Yönelik Planlarım</h2>
+            <p>Gelecekte, bilgisayar mühendisliği alanında uzmanlaşmayı ve özellikle yapay zeka ve makine öğrenimi üzerine çalışmalar yapmayı planlıyorum. Bunun için çeşitli sertifika programlarına katılmayı, kendi projelerimi geliştirerek sektörde deneyim kazandırmayı hedefliyorum. Ayrıca, yazılım geliştirme alanında bir kariyer hedefliyorum ve sektördeki lider firmalarda yer almayı amaçlıyorum. Kısa vadeli hedefim, bitirme projemle birlikte bu alanda büyük bir katkı sağlamak ve dünya çapında tanınan projelere imza atmak olacak.</p>
+        </div>
+    </main>
+    <footer>
+        <nav>
+            <a href="index.html">Ana Sayfaya Dön</a>
+        </nav>
+        <p>&copy; 2025 - Tüm Hakları Saklıdır</p>
+    </footer>
+</body>
+</html>
